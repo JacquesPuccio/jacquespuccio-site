@@ -1,7 +1,18 @@
-export default function PersonalSite() {
+"use client";
+
+import { useState } from "react";
+import Intro from "./Intro";
+
+export default function Home() {
+  const [showIntro, setShowIntro] = useState(true);
+
   return (
-    <main className="min-h-screen bg-neutral-950 text-white">
-      <section className="relative overflow-hidden border-b border-white/10">
+    <>
+      {showIntro && <Intro onFinish={() => setShowIntro(false)} />}
+
+      {!showIntro && (
+        <main className="min-h-screen bg-neutral-950 text-white">
+<section className="relative overflow-hidden border-b border-white/10">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(239,68,68,0.18),transparent_30%),radial-gradient(circle_at_left,rgba(59,130,246,0.18),transparent_28%)]" />
         <div className="relative mx-auto max-w-6xl px-6 py-20 lg:px-8 lg:py-28">
           <div className="grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
@@ -236,6 +247,9 @@ export default function PersonalSite() {
           </div>
         </div>
       </section>
-    </main>
+
+        </main>
+      )}
+    </>
   );
 }
