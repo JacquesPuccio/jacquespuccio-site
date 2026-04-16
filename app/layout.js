@@ -15,11 +15,9 @@ export const metadata = {
   title: "Jacques Puccio",
   description: "Business operations, SaaS, DevOps path, and revenue systems.",
   icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png",
-    icon: [
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-    ],
   },
   manifest: "/site.webmanifest",
 };
