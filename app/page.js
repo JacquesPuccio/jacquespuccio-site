@@ -20,11 +20,18 @@ export default function Home() {
               <div className="mb-5 inline-flex items-center rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm text-white/80 backdrop-blur">
                 Business operations • SaaS • DevOps path • Revenue systems
               </div>
-              <h1 className="max-w-4xl text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-7xl">
-                I build <span className="text-red-400">systems</span> that turn
-                ideas, operations, and execution into real business growth.
+              <h1 className="max-w-4xl font-playfair text-5xl sm:text-6xl lg:text-7xl font-medium leading-[1.05] tracking-tight">
+                <span className="block opacity-0 animate-fadeUp">
+  I build <span className="text-red-400">systems</span>
+</span>
+<span className="block opacity-0 animate-fadeUp delay-200">
+  that turn ideas into
+</span>
+<span className="block opacity-0 animate-fadeUp delay-400">
+  real business growth.
+</span>
               </h1>
-              <p className="mt-6 max-w-2xl text-base leading-8 text-white/70 sm:text-lg">
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-white/60 font-inter">
                 I’m Albert Jacques — working across SaaS, lead generation,
                 property services, and scalable workflows. I connect business,
                 technology, and execution.
@@ -39,7 +46,7 @@ export default function Home() {
                 </a>
                 <a
                   href="#contact"
-                  className="rounded-2xl bg-red-500 px-6 py-3 text-sm font-medium text-white shadow-lg shadow-red-500/20 transition hover:bg-red-400"
+                  className="rounded-2xl bg-red-500 px-6 py-3 text-sm font-medium text-white shadow-lg shadow-red-500/20 transition hover:scale-105 hover:bg-red-400 hover:shadow-red-500/40"
                 >
                   Work with me
                 </a>

@@ -32,3 +32,101 @@ body {
 .animate-fade {
   animation: fade 1s ease forwards;
 }
+@keyframes introFade {
+  0% { opacity: 0; transform: scale(0.96); letter-spacing: 0.5em; }
+  100% { opacity: 1; transform: scale(1); letter-spacing: 0.25em; }
+}
+
+@keyframes fadeSlow {
+  0% { opacity: 0; }
+  100% { opacity: 0.5; }
+}
+
+.animate-intro {
+  animation: introFade 1.6s ease forwards;
+}
+
+.animate-fadeSlow {
+  animation: fadeSlow 2.5s ease forwards;
+}
+@keyframes introFade {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+    letter-spacing: 0.6em;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    letter-spacing: 0.35em;
+  }
+}
+
+@keyframes fadeSlow {
+  0% { opacity: 0; }
+  100% { opacity: 0.5; }
+}
+
+@keyframes lineReveal {
+  0% { width: 0; opacity: 0; }
+  100% { width: 6rem; opacity: 0.2; }
+}
+
+.animate-intro {
+  animation: introFade 1.8s ease forwards;
+}
+
+.animate-fadeSlow {
+  animation: fadeSlow 2.5s ease forwards;
+}
+
+.animate-line {
+  animation: lineReveal 1.2s ease forwards;
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.animate-fadeUp {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.delay-400 {
+  animation-delay: 0.4s;
+}
+@keyframes introFade {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+    letter-spacing: 0.1em;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+    letter-spacing: 0.05em;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px) scale(1.02);
+    letter-spacing: 0.15em;
+  }
+}
+
+.animate-introFade {
+  animation: introFade 2.2s ease forwards;
+}
+
+.delay-300 {
+  animation-delay: 0.3s;
+}
