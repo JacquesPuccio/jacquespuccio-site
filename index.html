@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Jacques Puccio — Business Analyst & Consultant. I analyze your business, identify what's working and what's not, and deliver a clear action plan to move forward.">
-  <title>Jacques Puccio | Business Analyst & Consultant</title>
+  <meta name="description" content="jacquespuccio — Web Development, AI Automation & Custom Applications. We analyze your business, identify what's working and what's not, and build exactly what you need.">
+  <title>jacquespuccio | Web Development & AI</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -21,11 +21,17 @@
   <div class="nav-inner">
     <a href="#hero" class="nav-logo">JP</a>
     <ul class="nav-menu" id="navMenu">
-      <li><a href="#what-i-do" class="nav-link">What I Do</a></li>
-      <li><a href="#process" class="nav-link">Process</a></li>
-      <li><a href="#about" class="nav-link">About</a></li>
-      <li><a href="#analysis-form" class="nav-link nav-link-cta">Book Analysis</a></li>
+      <li><a href="#what-i-do" class="nav-link" data-i18n="nav.what">What We Do</a></li>
+      <li><a href="#process" class="nav-link" data-i18n="nav.process">Process</a></li>
+      <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
+      <li><a href="#analysis-form" class="nav-link nav-link-cta" data-i18n="nav.book">Book Analysis</a></li>
     </ul>
+    <div class="lang-switcher">
+      <button class="lang-btn active" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="es">ES</button>
+      <button class="lang-btn" data-lang="fr">FR</button>
+      <button class="lang-btn" data-lang="it">IT</button>
+    </div>
     <button class="hamburger" id="hamburger">
       <span></span><span></span><span></span>
     </button>
@@ -40,53 +46,56 @@
   </div>
 
   <div class="hero-content">
-    <div class="hero-eyebrow" data-reveal>Business Analysis & Consulting</div>
+    <div class="hero-eyebrow" data-reveal data-i18n="hero.eyebrow">Web Development · Automation · AI Agents</div>
 
     <h1 class="hero-title" data-reveal data-reveal-delay="100">
-      <span class="hero-name">Jacques Puccio</span>
+      <span class="hero-name">jacquespuccio</span>
     </h1>
 
-    <p class="hero-statement" data-reveal data-reveal-delay="200">
-      I look inside your business — <em>deeply</em>.<br>
+    <p class="hero-statement" data-reveal data-reveal-delay="200" data-i18n-html="hero.statement">
+      We look inside your business — <em>deeply</em>.<br>
       Find what's working. Expose what's not.<br>
-      Deliver a clear report. Then we fix it.
+      Then we build exactly what you need.
     </p>
 
     <div class="hero-pills" data-reveal data-reveal-delay="350">
-      <span class="pill">Business Analysis</span>
-      <span class="pill">Problem Diagnosis</span>
-      <span class="pill">Action Planning</span>
-      <span class="pill">Growth Strategy</span>
+      <span class="pill" data-i18n="pill.1">Web Development</span>
+      <span class="pill" data-i18n="pill.2">Problem Diagnosis</span>
+      <span class="pill" data-i18n="pill.3">Action Planning</span>
+      <span class="pill" data-i18n="pill.4">Growth Strategy</span>
+      <span class="pill" data-i18n="pill.5">AI Automation</span>
+      <span class="pill" data-i18n="pill.6">Custom Apps</span>
+      <span class="pill" data-i18n="pill.7">AI Agents</span>
     </div>
 
     <div class="hero-ctas" data-reveal data-reveal-delay="450">
       <a href="#analysis-form" class="btn-primary">
-        Start Your Analysis
+        <span data-i18n="hero.cta1">Start Your Analysis</span>
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
-      <a href="#what-i-do" class="btn-ghost">See How I Work</a>
+      <a href="#what-i-do" class="btn-ghost" data-i18n="hero.cta2">See How We Work</a>
     </div>
   </div>
 
   <div class="hero-scroll-hint" data-reveal data-reveal-delay="600">
     <div class="scroll-line"></div>
-    <span>Scroll</span>
+    <span data-i18n="hero.scroll">Scroll</span>
   </div>
 
   <div class="hero-stats" data-reveal data-reveal-delay="500">
     <div class="hero-stat">
       <div class="hero-stat-num"><span class="counter" data-to="47">0</span>+</div>
-      <div class="hero-stat-lbl">Businesses Analyzed</div>
+      <div class="hero-stat-lbl" data-i18n="stat.1">Businesses Analyzed</div>
     </div>
     <div class="hero-stat-divider"></div>
     <div class="hero-stat">
       <div class="hero-stat-num"><span class="counter" data-to="12">0</span></div>
-      <div class="hero-stat-lbl">Industries Covered</div>
+      <div class="hero-stat-lbl" data-i18n="stat.2">Industries Covered</div>
     </div>
     <div class="hero-stat-divider"></div>
     <div class="hero-stat">
       <div class="hero-stat-num"><span class="counter" data-to="100">0</span>%</div>
-      <div class="hero-stat-lbl">Report Delivery Rate</div>
+      <div class="hero-stat-lbl" data-i18n="stat.3">Report Delivery Rate</div>
     </div>
   </div>
 </section>
@@ -94,33 +103,33 @@
 <!-- ═══ MARQUEE ═══ -->
 <div class="marquee-section">
   <div class="marquee-track">
+    <span>Web Development</span><span class="dot">·</span>
+    <span>AI Automation</span><span class="dot">·</span>
+    <span>Custom Applications</span><span class="dot">·</span>
     <span>Business Analysis</span><span class="dot">·</span>
-    <span>Operational Diagnosis</span><span class="dot">·</span>
+    <span>AI Agents</span><span class="dot">·</span>
     <span>Growth Strategy</span><span class="dot">·</span>
-    <span>Problem Identification</span><span class="dot">·</span>
-    <span>Action Planning</span><span class="dot">·</span>
-    <span>Revenue Optimization</span><span class="dot">·</span>
     <span>Process Audit</span><span class="dot">·</span>
+    <span>Web Development</span><span class="dot">·</span>
+    <span>AI Automation</span><span class="dot">·</span>
+    <span>Custom Applications</span><span class="dot">·</span>
     <span>Business Analysis</span><span class="dot">·</span>
-    <span>Operational Diagnosis</span><span class="dot">·</span>
+    <span>AI Agents</span><span class="dot">·</span>
     <span>Growth Strategy</span><span class="dot">·</span>
-    <span>Problem Identification</span><span class="dot">·</span>
-    <span>Action Planning</span><span class="dot">·</span>
-    <span>Revenue Optimization</span><span class="dot">·</span>
     <span>Process Audit</span><span class="dot">·</span>
   </div>
 </div>
 
-<!-- ═══ WHAT I DO ═══ -->
+<!-- ═══ WHAT WE DO ═══ -->
 <section class="section what-section" id="what-i-do">
   <div class="container">
-    <div class="section-label" data-aos>What I Do</div>
-    <h2 class="section-title" data-aos>
-      I look at the full picture —<br>
+    <div class="section-label" data-aos data-i18n="what.label">What We Do</div>
+    <h2 class="section-title" data-aos data-i18n-html="what.title">
+      We look at the full picture —<br>
       <em>then we build what you actually need</em>
     </h2>
-    <p class="section-lead" data-aos>
-      Most consultants give you a report and walk away. I analyze your business deeply — including your web presence — identify the specific gaps, and then we build the solution together. Custom, not generic.
+    <p class="section-lead" data-aos data-i18n="what.lead">
+      Most consultants give you a report and walk away. We analyze your business deeply — including your web presence — identify the specific gaps, and then build the solution together. Custom, not generic.
     </p>
 
     <div class="services-grid services-grid--3">
@@ -129,10 +138,10 @@
         <div class="service-icon">
           <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="24" rx="3" stroke="currentColor" stroke-width="2"/><path d="M18 34l-3 6M30 34l3 6M15 40h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M14 20h20M14 26h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="34" cy="26" r="2" fill="currentColor" opacity=".4"/></svg>
         </div>
-        <h3>Web Presence Audit & Development</h3>
-        <p>I review your current website — or the lack of one. Does it represent your business well? Is it converting visitors? If you need a new site or major improvements, we project it and build it.</p>
+        <h3 data-i18n="s1.title">Web Presence Audit & Development</h3>
+        <p data-i18n="s1.desc">We review your current website — or the lack of one. Does it represent your business well? Is it converting visitors? If you need a new site or major improvements, we project it and build it.</p>
         <div class="service-tags">
-          <span>Website Audit</span><span>UX Review</span><span>Web Build</span>
+          <span data-i18n="s1.t1">Website Audit</span><span data-i18n="s1.t2">UX Review</span><span data-i18n="s1.t3">Web Build</span>
         </div>
       </div>
 
@@ -141,22 +150,58 @@
         <div class="service-icon">
           <svg viewBox="0 0 48 48" fill="none"><path d="M8 36l10-10 8 8 14-18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="36" r="2" fill="currentColor"/><circle cx="18" cy="26" r="2" fill="currentColor"/><circle cx="26" cy="34" r="2" fill="currentColor"/><circle cx="40" cy="16" r="2" fill="currentColor"/><path d="M40 8v8M36 12h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
         </div>
-        <h3>Full Business Analysis</h3>
-        <p>Operations, finances, team structure, customer journey, market position — I look at all of it. I identify what's working, what's leaking, and what's genuinely blocking your growth.</p>
+        <h3 data-i18n="s2.title">Full Business Analysis</h3>
+        <p data-i18n="s2.desc">Operations, finances, team structure, customer journey, market position — we look at all of it. We identify what's working, what's leaking, and what's genuinely blocking your growth.</p>
         <div class="service-tags">
-          <span>Operations</span><span>Finance</span><span>Strategy</span>
+          <span data-i18n="s2.t1">Operations</span><span data-i18n="s2.t2">Finance</span><span data-i18n="s2.t3">Strategy</span>
         </div>
       </div>
 
-      <div class="service-card service-card--featured" data-aos data-aos-delay="200">
+      <div class="service-card" data-aos data-aos-delay="200">
         <div class="service-number">03</div>
         <div class="service-icon">
           <svg viewBox="0 0 48 48" fill="none"><path d="M24 8L8 16v12c0 10 6.7 19.3 16 22 9.3-2.7 16-12 16-22V16L24 8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M18 26l4 4 8-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
-        <h3>Tailored Solutions, Built For You</h3>
-        <p>The analysis reveals what you need. Instead of selling you something off the shelf, we identify the specific solution — and if we can build it, we do. A website, a system, a process, a tool. Made for your business, not anyone else's.</p>
+        <h3 data-i18n="s3.title">Tailored Solutions, Built For You</h3>
+        <p data-i18n="s3.desc">The analysis reveals what you need. Instead of selling you something off the shelf, we identify the specific solution — and if we can build it, we do. A website, a system, a process, a tool. Made for your business, not anyone else's.</p>
         <div class="service-tags">
-          <span>Custom</span><span>Tailored</span><span>Delivered</span>
+          <span data-i18n="s3.t1">Custom</span><span data-i18n="s3.t2">Tailored</span><span data-i18n="s3.t3">Delivered</span>
+        </div>
+      </div>
+
+      <div class="service-card" data-aos data-aos-delay="0">
+        <div class="service-number">04</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="8" width="32" height="24" rx="3" stroke="currentColor" stroke-width="2"/><path d="M17 20l4 4-4 4M25 28h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 38h20M24 32v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3 data-i18n="s4.title">Custom Applications</h3>
+        <p data-i18n="s4.desc">We design and build web and internal applications specifically tailored to your workflows. No templates, no off-the-shelf software — just a tool that fits your operation exactly.</p>
+        <div class="service-tags">
+          <span data-i18n="s4.t1">Web Apps</span><span data-i18n="s4.t2">Internal Tools</span><span data-i18n="s4.t3">Full-Stack</span>
+        </div>
+      </div>
+
+      <div class="service-card service-card--featured" data-aos data-aos-delay="100">
+        <div class="service-number">05</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="6" stroke="currentColor" stroke-width="2"/><path d="M24 8v6M24 34v6M8 24h6M34 24h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M13.4 13.4l4.2 4.2M30.4 30.4l4.2 4.2M13.4 34.6l4.2-4.2M30.4 17.6l4.2-4.2" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".5"/></svg>
+        </div>
+        <h3 data-i18n="s5.title">AI Automation</h3>
+        <p data-i18n="s5.desc">Repetitive workflows, manual data processes, bottlenecks that slow your team down — we convert them into intelligent automations powered by AI. More output, less friction.</p>
+        <div class="service-tags">
+          <span data-i18n="s5.t1">Workflows</span><span data-i18n="s5.t2">AI Pipelines</span><span data-i18n="s5.t3">Process Design</span>
+        </div>
+      </div>
+
+      <div class="service-card" data-aos data-aos-delay="200">
+        <div class="service-number">06</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none"><rect x="14" y="6" width="20" height="16" rx="4" stroke="currentColor" stroke-width="2"/><circle cx="20" cy="14" r="2" fill="currentColor" opacity=".5"/><circle cx="28" cy="14" r="2" fill="currentColor" opacity=".5"/><path d="M24 22v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><rect x="8" y="26" width="32" height="16" rx="4" stroke="currentColor" stroke-width="2"/><path d="M16 34h4M28 34h4M24 34h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3 data-i18n="s6.title">Personal AI Agents</h3>
+        <p data-i18n="s6.desc">We configure AI agents tailored to your business context — trained on your data, aligned with your tone, and deployed where you need them. Your business, always on.</p>
+        <div class="service-tags">
+          <span data-i18n="s6.t1">AI Agents</span><span data-i18n="s6.t2">Custom Training</span><span data-i18n="s6.t3">Deployment</span>
         </div>
       </div>
     </div>
@@ -166,20 +211,20 @@
 <!-- ═══ STATEMENT BLOCK ═══ -->
 <section class="statement-section">
   <div class="container">
-    <blockquote class="big-statement" data-aos>
+    <blockquote class="big-statement" data-aos data-i18n-html="statement.quote">
       "Most businesses don't fail because of bad products.<br>
       They fail because <em>nobody looked closely enough</em><br>
       at what was actually happening inside."
     </blockquote>
-    <div class="statement-attr" data-aos>— Jacques Puccio</div>
+    <div class="statement-attr" data-aos>— jacquespuccio</div>
   </div>
 </section>
 
 <!-- ═══ PROCESS ═══ -->
 <section class="section process-section" id="process">
   <div class="container">
-    <div class="section-label" data-aos>How It Works</div>
-    <h2 class="section-title" data-aos>
+    <div class="section-label" data-aos data-i18n="process.label">How It Works</div>
+    <h2 class="section-title" data-aos data-i18n-html="process.title">
       From first call to<br><em>clear action plan</em>
     </h2>
 
@@ -189,9 +234,9 @@
           <div class="process-step">01</div>
         </div>
         <div class="process-right">
-          <h3>Discovery Call — 30 min, free</h3>
-          <p>We talk. I listen. You tell me what's going on in your business — where you are, where you want to be, and what's getting in the way. No pitch, just conversation.</p>
-          <div class="process-detail">Free · No commitment · 30 minutes</div>
+          <h3 data-i18n="p1.title">Discovery Call — 30 min, free</h3>
+          <p data-i18n="p1.desc">We talk. We listen. You tell us what's going on in your business — where you are, where you want to be, and what's getting in the way. No pitch, just conversation.</p>
+          <div class="process-detail" data-i18n="p1.detail">Free · No commitment · 30 minutes</div>
         </div>
       </div>
 
@@ -202,9 +247,9 @@
           <div class="process-step">02</div>
         </div>
         <div class="process-right">
-          <h3>Deep Business Analysis</h3>
-          <p>I go deep into your numbers, your processes, your team structure, your market position. This takes 1–2 weeks depending on the size of your operation. You provide access, I do the work.</p>
-          <div class="process-detail">1–2 weeks · Confidential · Thorough</div>
+          <h3 data-i18n="p2.title">Deep Business Analysis</h3>
+          <p data-i18n="p2.desc">We go deep into your numbers, your processes, your team structure, your market position. This takes 1–2 weeks depending on the size of your operation. You provide access, we do the work.</p>
+          <div class="process-detail" data-i18n="p2.detail">1–2 weeks · Confidential · Thorough</div>
         </div>
       </div>
 
@@ -215,9 +260,9 @@
           <div class="process-step">03</div>
         </div>
         <div class="process-right">
-          <h3>Report Delivery & Presentation</h3>
-          <p>You receive your complete Business Analysis Report — a structured document covering every area of your business with specific findings, ranked by urgency and impact.</p>
-          <div class="process-detail">Full written report · Presentation · Q&A session</div>
+          <h3 data-i18n="p3.title">Report Delivery & Presentation</h3>
+          <p data-i18n="p3.desc">You receive your complete Business Analysis Report — a structured document covering every area of your business with specific findings, ranked by urgency and impact.</p>
+          <div class="process-detail" data-i18n="p3.detail">Full written report · Presentation · Q&amp;A session</div>
         </div>
       </div>
 
@@ -228,9 +273,9 @@
           <div class="process-step">04</div>
         </div>
         <div class="process-right">
-          <h3>Action Plan & Follow-up</h3>
-          <p>Based on the findings, we build a prioritized action plan. I stay available for questions and optional implementation support. You take the wheel — with total clarity.</p>
-          <div class="process-detail">30-day follow-up · Implementation support available</div>
+          <h3 data-i18n="p4.title">Action Plan & Follow-up</h3>
+          <p data-i18n="p4.desc">Based on the findings, we build a prioritized action plan. We stay available for questions and optional implementation support. You take the wheel — with total clarity.</p>
+          <div class="process-detail" data-i18n="p4.detail">30-day follow-up · Implementation support available</div>
         </div>
       </div>
     </div>
@@ -243,40 +288,40 @@
     <div class="about-grid">
       <div class="about-image-col" data-aos>
         <div class="about-img-frame">
-          <img src="assets/jacques.jpg" alt="Jacques Puccio" class="about-photo">
+          <img src="assets/jacques.jpg" alt="jacquespuccio" class="about-photo">
           <div class="about-photo-overlay"></div>
         </div>
         <div class="about-img-card">
           <div class="aic-num">47+</div>
-          <div class="aic-lbl">Businesses Analyzed</div>
+          <div class="aic-lbl" data-i18n="stat.1">Businesses Analyzed</div>
         </div>
       </div>
       <div class="about-text-col" data-aos data-aos-delay="150">
-        <div class="section-label">About Me</div>
-        <h2>I analyze businesses.<br><em>Seriously.</em></h2>
-        <p>I'm Jacques Puccio — a business analyst and consultant focused on one thing: understanding what's really happening inside your company.</p>
-        <p>I've worked across multiple industries, and what I've found is that most businesses have the same core problem — they're running on assumptions rather than facts. Nobody has sat down and looked carefully at the full picture.</p>
-        <p>That's what I do. I look at everything — operations, financials, team dynamics, customer journey, market positioning — and I give you a clear, honest assessment. No sugar-coating. No generic advice. Just specific findings about <em>your</em> business.</p>
+        <div class="section-label" data-i18n="about.label">About Us</div>
+        <h2 data-i18n-html="about.title">We analyze businesses.<br><em>Seriously.</em></h2>
+        <p data-i18n="about.p1">jacquespuccio is a web development and AI studio focused on one thing: understanding what's really happening inside your company, then building the right solution.</p>
+        <p data-i18n="about.p2">We've worked across multiple industries, and what we've found is that most businesses have the same core problem — they're running on assumptions rather than facts. Nobody has sat down and looked carefully at the full picture.</p>
+        <p data-i18n="about.p3">That's what jacquespuccio does. We look at everything — operations, financials, team dynamics, customer journey, market positioning — and give you a clear, honest assessment. No sugar-coating. No generic advice. Just specific findings about <em>your</em> business.</p>
         <div class="about-values">
           <div class="about-value">
             <div class="av-icon">→</div>
             <div>
-              <strong>Honest over comfortable</strong>
-              <span>I tell you what you need to hear, not what you want to hear.</span>
+              <strong data-i18n="v1.title">Honest over comfortable</strong>
+              <span data-i18n="v1.desc">We tell you what you need to hear, not what you want to hear.</span>
             </div>
           </div>
           <div class="about-value">
             <div class="av-icon">→</div>
             <div>
-              <strong>Specific over generic</strong>
-              <span>Every report is built for your business, not copy-pasted from a template.</span>
+              <strong data-i18n="v2.title">Specific over generic</strong>
+              <span data-i18n="v2.desc">Every report is built for your business, not copy-pasted from a template.</span>
             </div>
           </div>
           <div class="about-value">
             <div class="av-icon">→</div>
             <div>
-              <strong>Action over analysis paralysis</strong>
-              <span>The goal is a plan you can execute, not a report that sits on a shelf.</span>
+              <strong data-i18n="v3.title">Action over analysis paralysis</strong>
+              <span data-i18n="v3.desc">The goal is a plan you can execute, not a report that sits on a shelf.</span>
             </div>
           </div>
         </div>
@@ -289,28 +334,27 @@
 <section class="form-section" id="analysis-form">
   <div class="container">
     <div class="form-header" data-aos>
-      <div class="section-label">Start Here</div>
-      <h2>Request Your Business Analysis</h2>
-      <p>Fill out the form below and I'll review your submission within 24 hours. Discovery call is completely free.</p>
+      <div class="section-label" data-i18n="form.label">Start Here</div>
+      <h2 data-i18n="form.title">Request Your Business Analysis</h2>
+      <p data-i18n="form.subtitle">Fill out the form below and we'll review your submission within 24 hours. Discovery call is completely free.</p>
     </div>
 
     <div class="multistep-form-wrapper" data-aos>
-      <!-- Progress bar -->
       <div class="form-progress">
         <div class="progress-steps">
           <div class="progress-step active" data-step="1">
             <div class="ps-dot"></div>
-            <div class="ps-label">Your Business</div>
+            <div class="ps-label" data-i18n="prog.1">Your Business</div>
           </div>
           <div class="progress-line"></div>
           <div class="progress-step" data-step="2">
             <div class="ps-dot"></div>
-            <div class="ps-label">Challenges</div>
+            <div class="ps-label" data-i18n="prog.2">Challenges</div>
           </div>
           <div class="progress-line"></div>
           <div class="progress-step" data-step="3">
             <div class="ps-dot"></div>
-            <div class="ps-label">Contact</div>
+            <div class="ps-label" data-i18n="prog.3">Contact</div>
           </div>
         </div>
         <div class="progress-bar-track">
@@ -320,30 +364,30 @@
 
       <form id="analysisForm" novalidate>
 
-        <!-- STEP 1: Business Info -->
+        <!-- STEP 1 -->
         <div class="form-step active" id="step1">
           <div class="step-title">
             <span>01</span>
-            Tell me about your business
+            <span data-i18n="step1.title">Tell us about your business</span>
           </div>
           <div class="form-fields">
             <div class="field-row">
               <div class="field-group">
-                <label for="companyName">Company / Business Name *</label>
+                <label for="companyName" data-i18n="f.company">Company / Business Name *</label>
                 <input type="text" id="companyName" name="companyName" placeholder="Acme Corp" required>
-                <span class="field-error-msg">This field is required</span>
+                <span class="field-error-msg" data-i18n="f.required">This field is required</span>
               </div>
               <div class="field-group">
-                <label for="industry">Industry / Sector *</label>
+                <label for="industry" data-i18n="f.industry">Industry / Sector *</label>
                 <input type="text" id="industry" name="industry" placeholder="e.g. Retail, Tech, Hospitality..." required>
-                <span class="field-error-msg">This field is required</span>
+                <span class="field-error-msg" data-i18n="f.required">This field is required</span>
               </div>
             </div>
             <div class="field-row">
               <div class="field-group">
-                <label for="companySize">Number of Employees</label>
+                <label for="companySize" data-i18n="f.size">Number of Employees</label>
                 <select id="companySize" name="companySize">
-                  <option value="">Select range...</option>
+                  <option value="" data-i18n="f.select">Select range...</option>
                   <option value="1-5">1–5 (Solo / Micro)</option>
                   <option value="6-20">6–20 (Small)</option>
                   <option value="21-50">21–50 (Medium-Small)</option>
@@ -352,9 +396,9 @@
                 </select>
               </div>
               <div class="field-group">
-                <label for="revenue">Annual Revenue Range</label>
+                <label for="revenue" data-i18n="f.revenue">Annual Revenue Range</label>
                 <select id="revenue" name="revenue">
-                  <option value="">Select range...</option>
+                  <option value="" data-i18n="f.select">Select range...</option>
                   <option value="<100k">Under $100K</option>
                   <option value="100k-500k">$100K – $500K</option>
                   <option value="500k-1m">$500K – $1M</option>
@@ -364,9 +408,9 @@
               </div>
             </div>
             <div class="field-group">
-              <label for="yearsInBusiness">How long has the business been operating?</label>
+              <label for="yearsInBusiness" data-i18n="f.years">How long has the business been operating?</label>
               <select id="yearsInBusiness" name="yearsInBusiness">
-                <option value="">Select...</option>
+                <option value="" data-i18n="f.select">Select...</option>
                 <option value="<1">Less than 1 year</option>
                 <option value="1-3">1–3 years</option>
                 <option value="3-7">3–7 years</option>
@@ -377,122 +421,122 @@
           </div>
           <div class="step-nav">
             <button type="button" class="btn-next" onclick="nextStep(1)">
-              Next — Your Challenges
+              <span data-i18n="btn.next1">Next — Your Challenges</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </button>
           </div>
         </div>
 
-        <!-- STEP 2: Challenges -->
+        <!-- STEP 2 -->
         <div class="form-step" id="step2">
           <div class="step-title">
             <span>02</span>
-            What's going on in your business?
+            <span data-i18n="step2.title">What's going on in your business?</span>
           </div>
           <div class="form-fields">
             <div class="field-group">
-              <label for="mainChallenges">What are your main challenges right now? *</label>
-              <textarea id="mainChallenges" name="mainChallenges" rows="4" placeholder="e.g. Sales are stagnant, team issues, costs out of control, not sure where growth is coming from..." required></textarea>
-              <span class="field-error-msg">Please describe your main challenges</span>
+              <label for="mainChallenges" data-i18n="f.challenges">What are your main challenges right now? *</label>
+              <textarea id="mainChallenges" name="mainChallenges" rows="4" placeholder="e.g. Sales are stagnant, team issues, costs out of control..." required></textarea>
+              <span class="field-error-msg" data-i18n="f.challengesErr">Please describe your main challenges</span>
             </div>
             <div class="field-group">
-              <label for="goals">What do you want to achieve in the next 12 months?</label>
-              <textarea id="goals" name="goals" rows="3" placeholder="e.g. Increase revenue by 30%, reduce operational costs, improve team efficiency..."></textarea>
+              <label for="goals" data-i18n="f.goals">What do you want to achieve in the next 12 months?</label>
+              <textarea id="goals" name="goals" rows="3" placeholder="e.g. Increase revenue by 30%, reduce operational costs..."></textarea>
             </div>
             <div class="field-group">
-              <label>What areas concern you the most? (Select all that apply)</label>
+              <label data-i18n="f.areas">What areas concern you the most? (Select all that apply)</label>
               <div class="checkbox-grid">
-                <label class="checkbox-item"><input type="checkbox" name="areas" value="Sales & Revenue"><span>Sales & Revenue</span></label>
-                <label class="checkbox-item"><input type="checkbox" name="areas" value="Operations & Processes"><span>Operations & Processes</span></label>
-                <label class="checkbox-item"><input type="checkbox" name="areas" value="Team & HR"><span>Team & HR</span></label>
-                <label class="checkbox-item"><input type="checkbox" name="areas" value="Financial Management"><span>Financial Management</span></label>
-                <label class="checkbox-item"><input type="checkbox" name="areas" value="Marketing & Growth"><span>Marketing & Growth</span></label>
-                <label class="checkbox-item"><input type="checkbox" name="areas" value="Customer Experience"><span>Customer Experience</span></label>
-                <label class="checkbox-item"><input type="checkbox" name="areas" value="Technology & Systems"><span>Technology & Systems</span></label>
-                <label class="checkbox-item"><input type="checkbox" name="areas" value="Strategy & Direction"><span>Strategy & Direction</span></label>
+                <label class="checkbox-item"><input type="checkbox" name="areas" value="Sales & Revenue"><span data-i18n="area.1">Sales &amp; Revenue</span></label>
+                <label class="checkbox-item"><input type="checkbox" name="areas" value="Operations & Processes"><span data-i18n="area.2">Operations &amp; Processes</span></label>
+                <label class="checkbox-item"><input type="checkbox" name="areas" value="Team & HR"><span data-i18n="area.3">Team &amp; HR</span></label>
+                <label class="checkbox-item"><input type="checkbox" name="areas" value="Financial Management"><span data-i18n="area.4">Financial Management</span></label>
+                <label class="checkbox-item"><input type="checkbox" name="areas" value="Marketing & Growth"><span data-i18n="area.5">Marketing &amp; Growth</span></label>
+                <label class="checkbox-item"><input type="checkbox" name="areas" value="Customer Experience"><span data-i18n="area.6">Customer Experience</span></label>
+                <label class="checkbox-item"><input type="checkbox" name="areas" value="Technology & Systems"><span data-i18n="area.7">Technology &amp; Systems</span></label>
+                <label class="checkbox-item"><input type="checkbox" name="areas" value="Strategy & Direction"><span data-i18n="area.8">Strategy &amp; Direction</span></label>
               </div>
             </div>
             <div class="field-group">
-              <label for="urgency">How urgent is this for you?</label>
+              <label data-i18n="f.urgency">How urgent is this for you?</label>
               <div class="urgency-selector" id="urgencySelector">
-                <button type="button" class="urgency-btn" data-val="exploring">Just exploring</button>
-                <button type="button" class="urgency-btn" data-val="soon">Within 3 months</button>
-                <button type="button" class="urgency-btn" data-val="urgent">Urgent — now</button>
+                <button type="button" class="urgency-btn" data-val="exploring" data-i18n="urg.1">Just exploring</button>
+                <button type="button" class="urgency-btn" data-val="soon" data-i18n="urg.2">Within 3 months</button>
+                <button type="button" class="urgency-btn" data-val="urgent" data-i18n="urg.3">Urgent — now</button>
               </div>
               <input type="hidden" id="urgency" name="urgency" value="">
             </div>
           </div>
           <div class="step-nav">
-            <button type="button" class="btn-back" onclick="prevStep(2)">← Back</button>
+            <button type="button" class="btn-back" onclick="prevStep(2)" data-i18n="btn.back">← Back</button>
             <button type="button" class="btn-next" onclick="nextStep(2)">
-              Next — Your Contact Info
+              <span data-i18n="btn.next2">Next — Your Contact Info</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </button>
           </div>
         </div>
 
-        <!-- STEP 3: Contact -->
+        <!-- STEP 3 -->
         <div class="form-step" id="step3">
           <div class="step-title">
             <span>03</span>
-            How can I reach you?
+            <span data-i18n="step3.title">How can we reach you?</span>
           </div>
           <div class="form-fields">
             <div class="field-row">
               <div class="field-group">
-                <label for="firstName">First Name *</label>
+                <label for="firstName" data-i18n="f.fname">First Name *</label>
                 <input type="text" id="firstName" name="firstName" placeholder="Jacques" required>
-                <span class="field-error-msg">Required</span>
+                <span class="field-error-msg" data-i18n="f.reqShort">Required</span>
               </div>
               <div class="field-group">
-                <label for="lastName">Last Name *</label>
+                <label for="lastName" data-i18n="f.lname">Last Name *</label>
                 <input type="text" id="lastName" name="lastName" placeholder="Puccio" required>
-                <span class="field-error-msg">Required</span>
+                <span class="field-error-msg" data-i18n="f.reqShort">Required</span>
               </div>
             </div>
             <div class="field-group">
-              <label for="email">Email Address *</label>
+              <label for="email" data-i18n="f.email">Email Address *</label>
               <input type="email" id="email" name="email" placeholder="you@company.com" required>
-              <span class="field-error-msg">Please enter a valid email address</span>
+              <span class="field-error-msg" data-i18n="f.emailErr">Please enter a valid email address</span>
             </div>
             <div class="field-group">
-              <label for="phone">Phone / WhatsApp</label>
+              <label for="phone" data-i18n="f.phone">Phone / WhatsApp</label>
               <input type="tel" id="phone" name="phone" placeholder="+1 (407) 000-0000">
             </div>
             <div class="field-group">
-              <label for="howFound">How did you find out about me?</label>
+              <label for="howFound" data-i18n="f.howfound">How did you find out about us?</label>
               <select id="howFound" name="howFound">
-                <option value="">Select...</option>
-                <option value="referral">Referred by someone</option>
+                <option value="" data-i18n="f.select">Select...</option>
+                <option value="referral" data-i18n="hf.1">Referred by someone</option>
                 <option value="linkedin">LinkedIn</option>
-                <option value="google">Google Search</option>
-                <option value="social">Social Media</option>
-                <option value="other">Other</option>
+                <option value="google" data-i18n="hf.3">Google Search</option>
+                <option value="social" data-i18n="hf.4">Social Media</option>
+                <option value="other" data-i18n="hf.5">Other</option>
               </select>
             </div>
             <div class="field-group">
-              <label for="additionalInfo">Anything else you'd like me to know?</label>
+              <label for="additionalInfo" data-i18n="f.extra">Anything else you'd like us to know?</label>
               <textarea id="additionalInfo" name="additionalInfo" rows="3" placeholder="Any context, specific concerns, or questions..."></textarea>
             </div>
           </div>
           <div class="step-nav">
-            <button type="button" class="btn-back" onclick="prevStep(3)">← Back</button>
+            <button type="button" class="btn-back" onclick="prevStep(3)" data-i18n="btn.back">← Back</button>
             <button type="submit" class="btn-submit" id="submitBtn">
-              <span id="submitText">Submit — Request Analysis</span>
+              <span id="submitText" data-i18n="btn.submit">Submit — Request Analysis</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </button>
           </div>
         </div>
 
-        <!-- SUCCESS STATE -->
+        <!-- SUCCESS -->
         <div class="form-step form-success" id="stepSuccess">
           <div class="success-icon">
             <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="2"/><path d="M20 32l9 9 16-18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
-          <h3>Request Received</h3>
-          <p>Thank you for your submission. I'll review your information and reach out within <strong>24 hours</strong> to schedule your free discovery call.</p>
-          <p class="success-sub">Your data has been recorded. Check your email for confirmation.</p>
-          <a href="#hero" class="btn-ghost">Back to top</a>
+          <h3 data-i18n="success.title">Request Received</h3>
+          <p data-i18n-html="success.msg">Thank you for your submission. We'll review your information and reach out within <strong>24 hours</strong> to schedule your free discovery call.</p>
+          <p class="success-sub" data-i18n="success.sub">Your data has been recorded. Check your email for confirmation.</p>
+          <a href="#hero" class="btn-ghost" data-i18n="success.btn">Back to top</a>
         </div>
 
       </form>
@@ -505,16 +549,17 @@
   <div class="container">
     <div class="footer-content">
       <div class="footer-left">
-        <div class="footer-logo">Jacques Puccio</div>
-        <p class="footer-tagline">Business Analysis & Consulting</p>
+        <div class="footer-logo">jacquespuccio</div>
+        <p class="footer-tagline" data-i18n="footer.tagline">Web Development & AI</p>
         <a href="mailto:hello@jacquespuccio.com" class="footer-email">hello@jacquespuccio.com</a>
       </div>
       <div class="footer-right">
         <nav class="footer-nav">
-          <a href="#what-i-do">What I Do</a>
-          <a href="#process">Process</a>
-          <a href="#about">About</a>
-          <a href="#analysis-form">Book Analysis</a>
+          <a href="#what-i-do" data-i18n="nav.what">What We Do</a>
+          <a href="#process" data-i18n="nav.process">Process</a>
+          <a href="#about" data-i18n="nav.about">About</a>
+          <a href="#analysis-form" data-i18n="nav.book">Book Analysis</a>
+          <a href="/privacy" style="color:var(--c-accent)">Privacy</a>
         </nav>
         <div class="footer-social">
           <a href="https://www.linkedin.com/in/jacquespuccio" target="_blank" rel="noopener" class="social-btn">
@@ -529,7 +574,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2025 Jacques Puccio. All rights reserved.</span>
+      <span data-i18n="footer.copy">© 2025 jacquespuccio. All rights reserved. &nbsp;·&nbsp; <a href="/privacy" style="color:inherit;text-decoration:underline;text-underline-offset:3px">Privacy Policy</a></span>
     </div>
   </div>
 </footer>

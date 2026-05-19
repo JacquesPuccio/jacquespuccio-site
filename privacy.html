@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Privacy Policy — jacquespuccio. How we collect, use, and protect your personal information.">
+  <title>Privacy Policy | jacquespuccio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <style>
+    .privacy-hero {
+      padding: 160px 0 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .privacy-hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,.028) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.028) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: radial-gradient(ellipse 80% 70% at 50% 40%, black 30%, transparent 100%);
+      pointer-events: none;
+    }
+    .privacy-hero::after {
+      content: '';
+      position: absolute;
+      top: 10%; left: 50%;
+      transform: translateX(-50%);
+      width: 700px; height: 400px;
+      background: radial-gradient(ellipse, rgba(200,169,110,.1) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .privacy-eyebrow {
+      font-size: .72rem; font-weight: 600;
+      letter-spacing: .22em; text-transform: uppercase;
+      color: var(--c-accent);
+      margin-bottom: 20px;
+    }
+    .privacy-title {
+      font-family: var(--f-serif);
+      font-size: clamp(2.5rem, 5vw, 5rem);
+      font-weight: 700;
+      line-height: 1.05;
+      color: var(--c-text);
+      margin-bottom: 24px;
+    }
+    .privacy-date {
+      font-size: .8rem;
+      color: var(--c-dim);
+      letter-spacing: .06em;
+    }
+    .privacy-body {
+      padding: 80px 0 120px;
+    }
+    .privacy-content {
+      max-width: 720px;
+    }
+    .privacy-section {
+      margin-bottom: 56px;
+    }
+    .privacy-section h2 {
+      font-family: var(--f-serif);
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: var(--c-text);
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--c-border);
+    }
+    .privacy-section p {
+      font-size: .95rem;
+      color: var(--c-muted);
+      line-height: 1.85;
+      margin-bottom: 14px;
+    }
+    .privacy-section p:last-child {
+      margin-bottom: 0;
+    }
+    .privacy-section ul {
+      list-style: none;
+      margin: 14px 0;
+    }
+    .privacy-section ul li {
+      font-size: .93rem;
+      color: var(--c-muted);
+      line-height: 1.8;
+      padding-left: 20px;
+      position: relative;
+      margin-bottom: 8px;
+    }
+    .privacy-section ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--c-accent);
+      font-weight: 600;
+    }
+    .privacy-section a {
+      color: var(--c-accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      transition: opacity var(--transition);
+    }
+    .privacy-section a:hover {
+      opacity: .75;
+    }
+    .privacy-highlight {
+      background: var(--c-surface);
+      border: 1px solid var(--c-border);
+      border-left: 3px solid var(--c-accent);
+      border-radius: var(--r);
+      padding: 20px 24px;
+      margin: 24px 0;
+    }
+    .privacy-highlight p {
+      margin-bottom: 0;
+      font-size: .88rem;
+    }
+    @media (max-width: 768px) {
+      .privacy-hero { padding: 130px 0 60px; }
+      .privacy-body { padding: 60px 0 80px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══ CURSOR ═══ -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+
+<!-- ═══ NAV ═══ -->
+<nav class="navbar scrolled" id="navbar">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">JP</a>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="/#what-i-do" class="nav-link">What We Do</a></li>
+      <li><a href="/#process" class="nav-link">Process</a></li>
+      <li><a href="/#about" class="nav-link">About</a></li>
+      <li><a href="/#analysis-form" class="nav-link nav-link-cta">Book Analysis</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══ PRIVACY HERO ═══ -->
+<section class="privacy-hero">
+  <div class="container">
+    <div class="privacy-eyebrow">Legal</div>
+    <h1 class="privacy-title">Privacy Policy</h1>
+    <p class="privacy-date">Effective date: May 19, 2025 &nbsp;·&nbsp; Last updated: May 19, 2025</p>
+  </div>
+</section>
+
+<!-- ═══ PRIVACY CONTENT ═══ -->
+<section class="privacy-body">
+  <div class="container">
+    <div class="privacy-content">
+
+      <div class="privacy-section">
+        <h2>Overview</h2>
+        <p>jacquespuccio ("we", "us", "our") operates the website <strong>jacquespuccio.com</strong>. This Privacy Policy explains what personal information we collect, how we use it, and the choices you have.</p>
+        <div class="privacy-highlight">
+          <p>We do not sell, rent, or trade your personal information to any third party. Ever.</p>
+        </div>
+      </div>
+
+      <div class="privacy-section">
+        <h2>Information We Collect</h2>
+        <p>We only collect information you voluntarily provide when filling out the Business Analysis Request form on this website. This may include:</p>
+        <ul>
+          <li>Business name, industry, and website URL</li>
+          <li>Estimated annual revenue range</li>
+          <li>Services you are interested in</li>
+          <li>Description of your current business challenges and priorities</li>
+          <li>First name and last name</li>
+          <li>Email address</li>
+          <li>Phone number or WhatsApp (optional)</li>
+          <li>How you found out about us</li>
+          <li>Any additional information you choose to share</li>
+        </ul>
+        <p>We do not use cookies for tracking, run advertising pixels, or deploy analytics scripts on this website. Google Fonts are loaded from Google's servers, which may process your IP address as part of serving the font files.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>How We Use Your Information</h2>
+        <p>The information you submit is used solely for the following purposes:</p>
+        <ul>
+          <li>To review your business situation and prepare for an initial discovery call</li>
+          <li>To contact you regarding your request for analysis or services</li>
+          <li>To understand your needs so we can provide relevant proposals</li>
+        </ul>
+        <p>We will not use your contact details to send unsolicited marketing emails or add you to any mailing list without your explicit consent.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>How We Store Your Information</h2>
+        <p>Form submissions are stored in a private Google Sheets document accessible only to jacquespuccio. This document is protected by Google account security and is not shared with outside parties.</p>
+        <p>We retain your information for as long as necessary to carry out a potential engagement. If you request deletion, we will remove your data promptly (see "Your Rights" below).</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>Third-Party Services</h2>
+        <p>We use the following third-party services in connection with this website:</p>
+        <ul>
+          <li><strong>Google Fonts</strong> — used to serve typefaces. Google may log your IP address when fonts are loaded. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+          <li><strong>Google Apps Script / Google Sheets</strong> — used to receive and store form submissions. Your submitted data is stored in a private Google Workspace spreadsheet. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+          <li><strong>Vercel</strong> — used to host and serve this website. Vercel may collect standard server logs (IP address, browser type, page requests) for operational purposes. See <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener">Vercel's Privacy Policy</a>.</li>
+        </ul>
+        <p>These are the only external services that may process your data in connection with your use of this website.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>Your Rights</h2>
+        <p>You have the right to:</p>
+        <ul>
+          <li>Request access to the personal data we hold about you</li>
+          <li>Request correction of inaccurate data</li>
+          <li>Request deletion of your data ("right to be forgotten")</li>
+          <li>Withdraw consent for any future communications at any time</li>
+        </ul>
+        <p>To exercise any of these rights, please contact us at <a href="mailto:hello@jacquespuccio.com">hello@jacquespuccio.com</a>. We will respond within 30 days.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>Children's Privacy</h2>
+        <p>This website is not directed to children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has submitted information through this site, please contact us so we can delete it.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. When we do, we will revise the "Last updated" date at the top of this page. We encourage you to review this page periodically. Continued use of the website after any changes constitutes your acceptance of the updated policy.</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>Contact</h2>
+        <p>If you have any questions about this Privacy Policy or how we handle your data, please reach out:</p>
+        <p>
+          <strong>jacquespuccio</strong><br>
+          <a href="mailto:hello@jacquespuccio.com">hello@jacquespuccio.com</a><br>
+          <a href="https://jacquespuccio.com">jacquespuccio.com</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-left">
+        <div class="footer-logo">jacquespuccio</div>
+        <p class="footer-tagline">Web Development &amp; AI</p>
+        <a href="mailto:hello@jacquespuccio.com" class="footer-email">hello@jacquespuccio.com</a>
+      </div>
+      <div class="footer-right">
+        <nav class="footer-nav">
+          <a href="/#what-i-do">What We Do</a>
+          <a href="/#process">Process</a>
+          <a href="/#about">About</a>
+          <a href="/#analysis-form">Book Analysis</a>
+          <a href="/privacy" style="color:var(--c-accent)">Privacy</a>
+        </nav>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/jacquespuccio" target="_blank" rel="noopener" class="social-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://jacquespuccio.com" target="_blank" rel="noopener" class="social-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+            Website
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 jacquespuccio. All rights reserved. &nbsp;·&nbsp; <a href="/privacy" style="color:inherit;text-decoration:underline;text-underline-offset:3px">Privacy Policy</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Cursor
+  const cursor = document.getElementById('cursor');
+  const follower = document.getElementById('cursorFollower');
+  let mx = 0, my = 0, fx = 0, fy = 0;
+  document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; cursor.style.left = mx + 'px'; cursor.style.top = my + 'px'; });
+  (function loop() { fx += (mx - fx) * .12; fy += (my - fy) * .12; follower.style.left = fx + 'px'; follower.style.top = fy + 'px'; requestAnimationFrame(loop); })();
+  document.querySelectorAll('a, button').forEach(el => {
+    el.addEventListener('mouseenter', () => document.body.classList.add('cursor-link'));
+    el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-link'));
+  });
+  // Hamburger
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('navMenu');
+  if (hamburger) hamburger.addEventListener('click', () => { navMenu.classList.toggle('open'); hamburger.classList.toggle('open'); });
+</script>
+</body>
+</html>
