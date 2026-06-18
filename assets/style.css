@@ -816,6 +816,7 @@ body.cursor-link .cursor-follower { width:60px;height:60px;border-color:rgba(200
   position:absolute;inset:0;
   background:linear-gradient(135deg,rgba(200,169,110,.06),transparent 60%);
   opacity:0;transition:opacity var(--transition);
+  pointer-events:none;
 }
 
 .project-card:hover { background:var(--c-surface2); }
